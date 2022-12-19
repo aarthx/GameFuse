@@ -1,0 +1,10 @@
+@import "./global/global.css";
+@import "./global/cores.css";
+
+@import "./global/componentes.css";
+@import "./home/header.css";
+@import "./home/principal.css";
+
+@import "./vencedores/vencedores.css";
+@import "./sugestao/sugestao.css";
+@import "./categorias/categorias.css";

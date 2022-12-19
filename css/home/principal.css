@@ -1,0 +1,179 @@
+body.home {
+  height: 2400px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--cor-dark) 70%,
+    var(--cor-primaria1)
+  );
+}
+
+.principal-bg {
+  height: 100%;
+  background: var(--cor-light);
+  color: var(--cor-dark);
+}
+
+.title-box {
+  padding-top: 100px;
+}
+
+.principal-title {
+  padding: 60px;
+  font-family: "Martian Mono", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 400;
+}
+
+.games-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+.game {
+  width: 800px;
+  height: 400px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.game:nth-child(odd) {
+  transform: rotate(5deg);
+}
+
+.game:nth-child(even) {
+  direction: rtl;
+  transform: rotate(-5deg);
+}
+
+.game:nth-child(2) {
+  top: 900px;
+}
+
+.game:nth-child(odd) .game-detalhes {
+  position: absolute;
+  width: 400px;
+  left: 380px;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  opacity: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.game:nth-child(even) .game-detalhes {
+  position: absolute;
+  width: 400px;
+  left: 40px;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  opacity: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: 2s;
+  text-align: right;
+}
+
+.game-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+  height: 400px;
+  background-color: var(--cor-primaria3);
+  box-shadow: inset 0px 50px var(--cor-primaria2);
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+}
+
+.game-container h2 {
+  font-family: "Rubik", sans-serif;
+  position: absolute;
+  top: 10px;
+  font-size: 2rem;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.game:hover {
+  transform: rotate(0deg);
+}
+
+.game-container:hover h2 {
+  opacity: 1;
+}
+
+.game-container:hover {
+  width: 800px;
+}
+
+.game-container:hover .game-detalhes {
+  opacity: 1;
+  transition: 0.1s;
+}
+
+.game:nth-child(odd) .game-container:hover .game-imagem {
+  margin-left: 50px;
+  align-self: flex-start;
+}
+
+.game:nth-child(even) .game-container:hover .game-imagem {
+  margin-left: 450px;
+  align-self: flex-end;
+}
+
+.game-imagem {
+  border: 20px solid var(--cor-light);
+  box-sizing: border-box;
+  margin-top: 50px;
+  width: 320px;
+  height: 320px;
+  transition: 0.5s;
+}
+
+.game1 {
+  background: url("../../img/game1.jpg") no-repeat center;
+  object-fit: cover;
+  background-size: 500px;
+}
+
+.game2 {
+  background: url("../../img/game2.jpg") no-repeat center;
+  object-fit: cover;
+  background-size: 500px;
+}
+
+.game3 {
+  background: url("../../img/game3.jpg") no-repeat center;
+  object-fit: cover;
+  background-size: 500px;
+}
+
+.game4 {
+  background: url("../../img/game4.jpg") no-repeat center;
+  object-fit: cover;
+  background-size: 500px;
+}
+
+footer {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  color: var(--cor-light);
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}

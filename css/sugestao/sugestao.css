@@ -1,0 +1,73 @@
+body.sugestao {
+  height: 900px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--cor-dark) 70%,
+    var(--cor-primaria1)
+  );
+}
+
+.sugestao-bg {
+  display: flex;
+  height: 100%;
+  background: var(--cor-light);
+  color: var(--cor-dark);
+}
+
+.sugestao-box {
+  display: flex;
+  width: 80%;
+  height: 500px;
+  background: var(--cor-primaria3);
+  border: 3px solid var(--cor-dark);
+  margin: auto auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.sugestao-box section h2 {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  line-height: 35px;
+}
+
+.sugestao-box section {
+  flex: 1;
+  padding: 50px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: end;
+}
+
+.form input {
+  height: 30px;
+  margin-top: 10px;
+}
+
+.form textarea {
+  margin-top: 10px;
+}
+
+.col-2 {
+  grid-column: 1/-1;
+}
+
+.mensagem * {
+  display: block;
+  width: 100%;
+}
+
+.mensagem {
+  grid-column: 1 /-1;
+  width: 100%;
+}
+
+.sug {
+  height: 40px;
+  grid-column: 2 / 3;
+  justify-self: end;
+}

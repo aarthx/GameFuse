@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;600&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Game Fuse | GOTY 2023</title>
+</head>
+
+<body class="sugestao">
+
+  <header class="nav-bg">
+    <div class="nav-home container">
+      <div class="barras container"></div>
+      <a href="./"><img src="./img/logo.svg" alt="Game Fuse"></a>
+      <nav aria-label="Navegação principal" class="nav-box">
+        <ul class="nav-list">
+          <li><a href="./categorias.html">Categorias</a></li>
+          <li><a href="./vencedores.html">Vencedores</a></li>
+          <li><a href="./sugestao.html">Sugestão</a></li>
+        </ul>
+      </nav>
+      <button class="botao">Escolha seu voto</button>
+    </div>
+  </header>
+
+  <main class="sugestao-bg container">
+    <div class="sugestao-box">
+      <section class="form-text">
+        <h2>Você acredita que algum jogo que você ama deve participar também? Coloque suas informações ao lado e torça pela sua entrada na competição!</h2>
+      </section>
+      <section>
+        <form class="form" action="./">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+          </div>
+          <div>
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="(21) 9999-9999">
+          </div>
+          <div class="email">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="contato@email.com">
+          </div>
+          <div>
+            <label for="jogo">Jogo</label>
+            <input type="text" id="Jogo" name="Jogo" placeholder="Seu Jogo">
+          </div>
+          <div class="mensagem">
+            <label for="mensagem">Mensagem</label>
+            <textarea rows="5" id="mensagem" name="mensagem" placeholder="Descreva porque seu jogo deve entrar" class="col-2"></textarea>
+          </div>
+          <button class="botao sug">Enviar Mensagem</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © 2022 Arthur Augusto, Inc.
+  </footer>
+
+</body>
+
+</html>
