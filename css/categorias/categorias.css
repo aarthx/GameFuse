@@ -1,4 +1,5 @@
 body.categoria {
+  width: inherit;
   height: fit-content;
   background-image: linear-gradient(
     to bottom,

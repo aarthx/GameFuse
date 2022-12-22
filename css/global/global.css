@@ -37,7 +37,7 @@ img {
 
 @media (max-width: 950px) {
   .container {
-    width: 100%;
+    width: auto;
     margin: 0 auto;
   }
   .bg-responsivo {

@@ -1,4 +1,5 @@
 body.home {
+  width: 100%;
   height: fit-content;
   background-image: linear-gradient(
     to bottom,
