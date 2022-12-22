@@ -1,5 +1,5 @@
 body.categoria {
-  height: 1300px;
+  height: fit-content;
   background-image: linear-gradient(
     to bottom,
     var(--cor-dark) 70%,
@@ -9,11 +9,10 @@ body.categoria {
 
 .categorias-bg {
   background-color: var(--cor-light);
-  height: 1300px;
 }
 
 .categorias-bg section {
-  padding-top: 150px;
+  padding: 150px 0px 100px 0px;
 }
 
 .categorias {
@@ -32,14 +31,16 @@ body.categoria {
   position: relative;
   z-index: 2;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.5em;
   font-weight: bold;
   font-family: "Rubik", sans-serif;
   color: var(--cor-dark);
   cursor: pointer;
   transition: 0.3s;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .categorias li::before {
@@ -101,7 +102,6 @@ body.categoria {
 .categorias li:nth-child(1)::before {
   background: url("../../img/audience.jpg") no-repeat right;
   background-size: cover;
-  background-size: 500px;
 }
 
 .categorias li:nth-child(1)::after {
@@ -136,7 +136,7 @@ body.categoria {
 }
 
 .categorias li:nth-child(5)::before {
-  background: url("../../img/best.png") no-repeat right;
+  background: url("../../img/best.png") no-repeat center;
   background-size: cover;
 }
 
@@ -187,4 +187,61 @@ body.categoria {
 
 .categorias li:nth-child(10)::after {
   content: "Avança o estado da arte e ultrapassa os limites dos jogos como um meio expressivo.";
+}
+
+@media (max-width: 950px) {
+  .categorias-bg section {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .categorias {
+    height: 1400px;
+    gap: 70px;
+    padding: 0px;
+  }
+  .categorias {
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+  .categorias li:nth-child(n) {
+    grid-row: auto;
+    grid-column: auto;
+    padding: 50px;
+    font-size: 1.5em;
+  }
+  .categorias li:nth-child(5) {
+    order: -4;
+    font-size: 2em;
+  }
+  .categorias li:nth-child(3) {
+    order: -3;
+    font-size: 2em;
+  }
+  .categorias li:nth-child(6) {
+    order: -2;
+    font-size: 2em;
+  }
+  .categorias li:nth-child(9) {
+    order: -1;
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 550px) {
+  .categorias-bg section {
+    padding-top: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .categorias-bg section {
+    padding-top: 350px;
+  }
+  .categorias {
+    grid-template: 2fr 1.5fr 1fr/ 1fr 1fr;
+  }
+  .categorias {
+    height: 2000px;
+  }
 }

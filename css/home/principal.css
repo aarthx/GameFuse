@@ -1,5 +1,5 @@
 body.home {
-  height: 2400px;
+  height: fit-content;
   background-image: linear-gradient(
     to bottom,
     var(--cor-dark) 70%,
@@ -11,6 +11,7 @@ body.home {
   height: 100%;
   background: var(--cor-light);
   color: var(--cor-dark);
+  padding-bottom: 50px;
 }
 
 .title-box {
@@ -173,7 +174,65 @@ footer {
   font-weight: 600;
   color: var(--cor-light);
   display: flex;
-  height: 40px;
+  height: fit-content;
   align-items: center;
   justify-content: center;
+  padding: 15px 0px;
+  background: var(--cor-dark);
+  height: fit-content;
+}
+
+@media (max-width: 950px) {
+  .principal-title {
+    padding-top: 100px;
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .principal-title {
+    padding-top: 150px;
+    font-size: 2.5rem;
+  }
+  .games-list {
+    gap: 300px;
+  }
+  .game-imagem {
+    width: 300px;
+    height: 300px;
+    background-size: 500px;
+  }
+  .game-container {
+    width: 600px;
+    height: 600px;
+  }
+  .game-detalhes {
+    font-size: 1.5rem;
+  }
+  .principal-bg {
+    padding-bottom: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .principal-title {
+    padding-top: 200px;
+    font-size: 3rem;
+  }
+  .game-container {
+    width: 500px;
+    height: 850px;
+  }
+  .games-list {
+    gap: 600px;
+  }
+  .game-detalhes {
+    font-size: 2rem;
+    position: absolute;
+  }
+  .game-imagem {
+    margin-top: 20px;
+  }
+  .principal-bg {
+    padding-bottom: 500px;
+  }
 }

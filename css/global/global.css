@@ -4,8 +4,6 @@ body {
   color: #111111;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -35,4 +33,18 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bg-responsivo {
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

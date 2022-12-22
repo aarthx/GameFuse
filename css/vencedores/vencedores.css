@@ -1,6 +1,7 @@
 .vencedores-bg {
-  height: 100%;
+  height: fit-content;
   background-color: var(--cor-light);
+  padding-bottom: 50px;
 }
 
 .vencedores-conteudo {
@@ -20,6 +21,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px 0;
+  padding: 50px;
 }
 
 .vencedores-lista li {
@@ -27,7 +29,7 @@
   box-shadow: 5px 5px 2px 2px;
   margin: 0 auto;
   padding: 20px;
-  width: 500px;
+  width: 75%;
   height: 300px;
   border-radius: 20px;
   display: flex;
@@ -102,10 +104,36 @@
 }
 
 .vencedores-lista li:nth-child(9) {
-  background: url("../../img/goty2022.jpg") no-repeat center;
-  background-size: 700px;
+  background: url("../../img/goty2022.jpg") no-repeat center bottom;
+  background-size: 900px;
 }
 
 .vencedores-lista li:last-child {
   grid-column: 1/-1;
+}
+
+@media (max-width: 1000px) {
+  .vencedores-lista {
+    grid-template-columns: 1fr;
+  }
+  .vencedores-lista li:nth-child(n) {
+    background-size: 900px;
+  }
+}
+
+@media (max-width: 950px) {
+  .vencedores-conteudo {
+    padding-top: 150px;
+  }
+}
+@media (max-width: 550px) {
+  .vencedores-conteudo {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .vencedores-conteudo {
+    padding-top: 250px;
+  }
 }

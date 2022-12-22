@@ -32,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: fit-content;
   color: var(--cor-dark);
   border: none;
   background-color: var(--cor-primaria3);
@@ -40,17 +40,17 @@
 
 .nav-home a {
   display: inline-block;
-  height: 100%;
 }
 
 .nav-home img {
   margin-left: 20px;
-  height: 100%;
+  max-height: 60px;
 }
 
 .nav-home .botao {
+  padding: 10px;
   margin-right: 20px;
-  height: 30px;
+  height: fit-content;
   font-size: 1.125rem;
 }
 
@@ -84,7 +84,6 @@
 .nav-list a::after {
   position: absolute;
   top: 25px;
-  right: px;
   display: block;
   content: "";
   height: 2px;
@@ -96,4 +95,58 @@
 .nav-list a:hover::after,
 .nav-list a:active::after {
   width: 100%;
+}
+
+@media (max-width: 950px) {
+  .nav-bg {
+    top: 0px;
+  }
+  .nav-home {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 20px 0px;
+    margin: 10px 0px;
+  }
+  .nav-list {
+    gap: 20px;
+  }
+  .nav-list a {
+    font-size: 1.5em;
+    padding: 5px;
+    background-color: var(--cor-light);
+    border-radius: 10px;
+    box-shadow: 2px 2px var(--cor-dark);
+  }
+  .nav-list a::after {
+    display: none;
+  }
+  .nav-home .botao {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .nav-home img {
+    padding: 10px;
+    max-height: 80px;
+  }
+  .nav-list {
+    gap: 5px 20px;
+  }
+  .nav-list a {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-list a {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 300px) {
+  .nav-list a {
+    padding: 40px;
+  }
 }
